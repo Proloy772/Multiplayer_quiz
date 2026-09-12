@@ -13,7 +13,7 @@ const QUESTIONS = [
 
 const CHANNEL = "quiz-room-local-v1";
 const bc = typeof BroadcastChannel !== "undefined" ? new BroadcastChannel(CHANNEL) : null;
-// hii prolay
+// The BroadcastChannel API is used to communicate between different tabs/windows of the same origin.
 function shuffle(arr, seed) {
   const a = [...arr];
   let s = seed >>> 0;
